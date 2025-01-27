@@ -2,8 +2,8 @@
 
 //creando un array que almacenara los nombre de los amigos
 let amigos = [];
-//alert('hola');
 
+//creando funcion para borrar elemento de la caja input
 function borrarCaja(){
     let valorCaja=document.querySelector('#amigo');
     valorCaja.value='';
@@ -26,9 +26,11 @@ function agregarAmigo(){
     }
 }
 
+//funcion mostrar en lista
 function recorreAmigos(){
     let Lista = document.getElementById('listaAmigos');
     Lista.innerHTML = ""
+    //iremos agregando los nombre de los amigos en vertical
     for(let i =0 ; i<amigos.length ; i++){
         let li = document.createElement('li');
         li.textContent = amigos[i];
